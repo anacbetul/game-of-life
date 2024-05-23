@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
     agent any
 
     stages {
@@ -14,8 +14,9 @@ pipeline {
         }
         stage('Run in background') {
             steps {
-                bat 'start javaw -jar your-application.jar'
+bat 'start javaw -jar game-of-life.jar'
             }
         }
     }
-}
+} 
+
